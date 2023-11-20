@@ -5,39 +5,44 @@ class mahasiswa
     private $name;
     private $nim;
     private $mat_kul;
+    private $cita_cita;
+
+
     // Methods
-    function set_name($name)
+    function __construct($name, $nim, $mat_kul, $cita_cita)
     {
         $this->name = $name;
+        $this->nim = $nim;
+        $this->mat_kul = $mat_kul;
+        $this->cita_cita = $cita_cita;
     }
+
     function get_name()
     {
         return $this->name;
     }
-    function set_nim($nim)
-    {
-        $this->nim = $nim;
-    }
+
     function get_nim()
     {
         return $this->nim;
     }
-    function set_mat_kul($mat_kul)
-    {
-        $this->mat_kul = $mat_kul;
-    }
+
     function get_mat_kul()
     {
         return $this->mat_kul;
     }
+
+    function get_cita_cita()
+    {
+        return $this->cita_cita;
+    }
 }
 
-$yusuf = new mahasiswa();
-$yusuf->set_name('Yusuf');
-$yusuf->set_nim('2255201040');
-$yusuf->set_mat_kul('PBO');
+$yusuf = new mahasiswa('Yusuf', '2255201040', 'PBO', 'Pengusaha');
 echo "Name: " . $yusuf->get_name();
 echo "\n";
 echo "nim: " . $yusuf->get_nim();
 echo "\n";
 echo "mat_kul: " . $yusuf->get_mat_kul();
+echo "\n";
+echo "cita cita: " . $yusuf->get_cita_cita();
