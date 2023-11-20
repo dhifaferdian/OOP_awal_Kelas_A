@@ -10,7 +10,7 @@ class Mahasiswa {
   public $matkul;
 
   // Methods
-  function set_name($name) {
+  function __construct($name) {
     $this->name = $name;
   }
   function get_name() {
