@@ -1,5 +1,5 @@
 <?php
-class identitas {
+class ryan {
   // Properties
   private $nama;
   private $nim;
@@ -32,13 +32,13 @@ class identitas {
 
 }
 
-$identitas = new identitas("M.RYAN_MAULANA_NST", "2255201022", "PBO", "Pengusaha");
-echo $identitas->get_nama();
+$ryan = new ryan("M.RYAN_MAULANA_NST", "2255201022", "PBO", "Pengusaha");
+echo $ryan->get_nama();
 echo "\n";
-echo $identitas->get_nim();
+echo $ryan->get_nim();
 echo "\n";
-echo $identitas->get_matkul();
+echo $ryan->get_matkul();
 echo "\n";
-echo $identitas->get_citacita();
+echo $ryan->get_citacita();
 
 ?>
