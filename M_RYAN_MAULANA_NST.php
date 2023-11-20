@@ -6,7 +6,7 @@ class identitas {
   private $matkul;
 
   // Methods
-  function __construct($nama) {
+  function __construct($nama, $nim, $matkul) {
     $this->nama = $nama;
   }
 
