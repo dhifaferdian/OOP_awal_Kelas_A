@@ -37,9 +37,9 @@ $rian->set_name('RIAN EKA PUTRA');
 $rian->set_nim('2255201043');
 $rian->set_matkul('PBO');
 echo "Name: " . $rian->get_name();
-echo "/n";
+echo "\n";
 echo "nim: " . $rian->get_nim();
-echo "/n";
+echo "\n";
 echo "matkul: " . $rian->get_matkul();
 ?>
  
