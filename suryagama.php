@@ -5,39 +5,41 @@ class mahasiswa
     private $name;
     private $nim;
     private $matkul;
+    private $citacita;
     // Methods
-    function set_name($name)
+    function __construct($name, $nim, $matkul, $citacita)
     {
         $this->name = $name;
+        $this->nim = $nim;
+        $this->matkul = $matkul;
+        $this->citacita = $citacita;
     }
     function get_name()
     {
         return $this->name;
     }
-    function set_nim($nim)
-    {
-        $this->nim = $nim;
-    }
+
     function get_nim()
     {
         return $this->nim;
     }
-    function set_matkul($matkul)
-    {
-        $this->matkul = $matkul;
-    }
+
     function get_matkul()
     {
         return $this->matkul;
     }
+    function get_citacita()
+    {
+        return $this->citacita;
+    }
 }
 
-$surya = new mahasiswa();
-$surya->set_name('gama');
-$surya->set_nim('2255201045');
-$surya->set_matkul('pbo');
+$surya = new mahasiswa('gama', '2255201045', 'PBO', 'menjadi ultramen');
+
 echo "Name: " . $surya->get_name();
 echo "\n";
 echo "nim: " . $surya->get_nim();
 echo "\n";
 echo "matkul: " . $surya->get_matkul();
+echo "\n";
+echo "citacita: " . $surya->get_citacita();
