@@ -22,7 +22,6 @@ class mahasiswa {
   function get_nim() {
     return $this->nim;
   }
-  function get_matkul () {
   function get_matkul() {
   	return $this->matkul;
   }
