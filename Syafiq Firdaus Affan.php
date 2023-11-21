@@ -31,7 +31,7 @@ class mahasiswa {
   }
 }
 
-$nama = new mahasiswa('muhammad Syafiq firdaus Affan', '2255201025', 'pbo', 'mentri');
+$syfq = new mahasiswa('muhammad Syafiq firdaus Affan', '2255201025', 'pbo', 'mentri');
 echo $syfq->get_name();
 echo "<br>";
 echo $syfq->get_nim();
