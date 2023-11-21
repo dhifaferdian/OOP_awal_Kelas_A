@@ -31,7 +31,7 @@ class mahasiswa {
   }
 }
 
-$nama = new mahasiswa('zikri alhadi adha', '2255201008', 'pbo', 'Tentara');
+$nama = new mahasiswa('zikri', '2255201008', 'pbo', 'Tentara');
 echo $nama->get_name();
 echo "<br>";
 echo $nama->get_nim();
