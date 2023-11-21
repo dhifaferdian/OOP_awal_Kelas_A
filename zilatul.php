@@ -36,7 +36,7 @@ class mahasiswa
 }
 
 
-$zilla = new mahasiswa('zilla', '2255201045', 'PBO', 'menjadi istri boboiboy');
+$zilla = new mahasiswa('zilla', '2255201048', 'PBO', 'menjadi istri boboiboy');
 
 echo "Name: " . $zilla->get_name();
 echo "\n";
