@@ -32,13 +32,13 @@ class mahasiswa {
 }
 
 $nama = new mahasiswa('muhammad Syafiq firdaus Affan', '2255201025', 'pbo', 'mentri');
-echo $nama->get_name();
+echo $syfq->get_name();
 echo "<br>";
-echo $nama->get_nim();
+echo $syfq->get_nim();
 echo "<br>";
-echo $nama->get_matkul();
+echo $syfq->get_matkul();
 echo "<br>";
-echo $nama->get_cita_cita();
+echo $syfq->get_cita_cita();
 
 ?>
  
