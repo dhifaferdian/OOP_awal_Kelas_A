@@ -31,14 +31,14 @@ class mahasiswa {
   }
 }
 
-$nama = new mahasiswa('zikri', '2255201008', 'pbo', 'Tentara');
-echo $nama->get_name();
+$zikri = new mahasiswa('zikri alhadi adha', '2255201008', 'pbo', 'Tentara');
+echo $zikri->get_name();
 echo "<br>";
-echo $nama->get_nim();
+echo $zikri->get_nim();
 echo "<br>";
-echo $nama->get_matkul();
+echo $zikri->get_matkul();
 echo "<br>";
-echo $nama->get_cita_cita();
+echo $zikri->get_cita_cita();
 
 ?>
  
