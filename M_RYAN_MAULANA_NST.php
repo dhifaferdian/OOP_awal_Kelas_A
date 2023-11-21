@@ -1,45 +1,44 @@
 <?php
-class identitas {
+class Ryan {
   // Properties
   private $nama;
   private $nim;
   private $matkul;
+  private $citacita;
 
   // Methods
-  function __construct($nama, $nim, $matkul) {
+  function __construct($nama, $nim, $matkul, $citacita) {
     $this->nama = $nama;
+    $this->nim = $nim;
+    $this->matkul = $matkul;
+    $this->citacita = $citacita;
   }
 
   function get_nama() {
     return $this->nama;
   }
 
-  function set_nim($nim) {
-    $this->nim = $nim;
-  }
-
   function get_nim() {
     return $this->nim;
-  }
-
-  function set_matkul($matkul) {
-    $this->matkul = $matkul;
   }
 
   function get_matkul() {
     return $this->matkul;
   }
 
+   function get_citacita() {
+    return $this->citacita;
+  }
+
 }
 
-$identitas = new identitas();
-$identitas->set_nama('M.RYAN_MAULANA_NST');
-$identitas->set_nim('2255201022');
-$identitas->set_matkul('PBO');
-echo "nama: " . $identitas->get_nama();
+$Ryan = new Ryan("M.RYAN_MAULANA_NST", "2255201022", "PBO", "Pengusaha");
+echo $Ryan->get_nama();
 echo "\n";
-echo "nim: " .  $identitas->get_nim();
+echo $Ryan->get_nim();
 echo "\n";
-echo "matkul: " .  $identitas->get_matkul();
+echo $Ryan->get_matkul();
+echo "\n";
+echo $Ryan->get_citacita();
 
 ?>

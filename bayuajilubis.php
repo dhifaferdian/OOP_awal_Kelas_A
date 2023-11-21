@@ -23,6 +23,7 @@ class mahasiswa {
     return $this->nim;
   }
   function set_matkul($matkul) {
+    
   	$this->matkul = $matkul;
   }
   function get_matkul () {
@@ -31,8 +32,8 @@ class mahasiswa {
 }
 
 $nama = new mahasiswa();
-$nama->set_name('aljur zaki ahkaf');
-$nama->set_nim('2255201011');
+$nama->set_name('Bayu aji lubis');
+$nama->set_nim('2255201014');
 $nama->set_matkul('pbo');
 echo "nama: " . $nama->get_name();
 echo "<br>";
