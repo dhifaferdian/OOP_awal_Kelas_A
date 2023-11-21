@@ -10,8 +10,6 @@ class mahasiswa {
   private $cita_cita;
 
   // Methods
-  function set_name($name) {
-    $this->name = $name;
   function __construct ($name, $nim, $matkul, $cita_cita){
   	$this->name = $name;
     $this->nim = $nim;
@@ -30,7 +28,6 @@ class mahasiswa {
   function set_matkul($matkul) {
   	$this->matkul = $matkul;
   }
-  function get_matkul () {
   function get_matkul() {
   	return $this->matkul;
   }
@@ -39,11 +36,6 @@ class mahasiswa {
   }
 }
 
-$Jefri = new mahasiswa();
-$Jefri->set_name('Jefrinaldi');
-$Jefri->set_nim('2255201021');
-$Jefri->set_matkul('pbo');
-echo "Nama: " . $Jefri->get_name();
 $Jefri = new mahasiswa('Jefrinaldi', '2255201021', 'pbo', 'Hebaatt');
 echo $Jefri->get_name();
 echo "<br>";
