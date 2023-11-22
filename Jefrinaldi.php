@@ -3,18 +3,19 @@
 <body>
 <?php
 class mahasiswa {
+  
   // Properties
   private $name;
   private $nim;
   private $matkul;
-  private $cita_cita;
+  private $citacita;
 
   // Methods
   function __construct ($name, $nim, $matkul, $cita_cita){
   	$this->name = $name;
     $this->nim = $nim;
     $this->matkul = $matkul;
-    $this->cita_cita = $cita_cita;
+    $this->citacita = $citacita;
   }
   function get_name() {
     return $this->name;
@@ -31,22 +32,23 @@ class mahasiswa {
   function get_matkul() {
   	return $this->matkul;
   }
-  function get_cita_cita() {
-  	return $this->cita_cita;
+  function set_citacita($citacita) {
+    $this->citacita = $citacita;
+  }
+  function get_citacita() {
+  	return $this->citacita;
   }
 }
 
 $Jefri = new mahasiswa('Jefrinaldi', '2255201021', 'pbo', 'Hebaatt');
-echo $Jefri->get_name();
+
+echo "Nama:" . $Jefri->get_name();
 echo "<br>";
-echo $Jefri->get_nim();
+echo "NIM:" . $Jefri->get_nim();
 echo "<br>";
-echo "nim: " .  $Jefri->get_nim();
-echo $Jefri->get_matkul();
+echo "Matkul: " . $Jefri->get_matkul();
 echo "<br>";
-echo "matkul: " . $Jefri->get_matkul();
-echo $Jefri->get_cita_cita();
+echo "Cita-Cita: " . $Jefri->get_citacita();
 
 ?>
-
 </body>
