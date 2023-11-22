@@ -30,6 +30,9 @@ class Mahasiswa {
   function get_matkul() {
     return $this->matkul;
   }
+  function get_citacita() {
+    return $this->citacita;
+  }
 }
 
 $cindy = new Mahasiswa(cindy','2255201003','PBO','Pilotkereta');
