@@ -7,9 +7,9 @@
 <?php
 class Mahasiswa {
   // Properties
-  public $name;
-  public $nim;
-  public $matkul;
+  private $name;
+  private $nim;
+  private $matkul;
   private $citacita;
 
   // Methods
