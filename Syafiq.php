@@ -9,11 +9,10 @@ class mahasiswa {
   private $nim;
   private $matkul;
   private $cita_cita;
-  
 
   // Methods
-  function __construct($name, $nim, $matkul,$cita_cita) {
-    $this->nama = $nama;
+  function __construct ($name, $nim, $matkul, $cita_cita){
+  	$this->name = $name;
     $this->nim = $nim;
     $this->matkul = $matkul;
     $this->cita_cita = $cita_cita;
@@ -32,14 +31,15 @@ class mahasiswa {
   }
 }
 
-$bayu = new mahasiswa('bayu aji lubis', '2255201014', 'PBO', 'Dokter');
-echo $bayu->get_name();
+$syfq = new mahasiswa('muhammad Syafiq firdaus Affan', '2255201025', 'pbo', 'mentri');
+echo $syfq->get_name();
 echo "<br>";
-echo $bayu->get_nim();
+echo $syfq->get_nim();
 echo "<br>";
-echo $bayu->get_matkul();
+echo $syfq->get_matkul();
 echo "<br>";
-echo $bayu->get_cita_cita();
+echo $syfq->get_cita_cita();
+
 ?>
  
 </body>
