@@ -20,20 +20,11 @@ class mahasiswa {
   function get_name() {
     return $this->name;
   }
-  function set_nim($nim) {
-    $this->nim = $nim;
-  }
   function get_nim() {
     return $this->nim;
   }
-  function set_matkul($matkul) {
-  	$this->matkul = $matkul;
-  }
   function get_matkul() {
   	return $this->matkul;
-  }
-  function set_citacita($citacita) {
-    $this->citacita = $citacita;
   }
   function get_citacita() {
   	return $this->citacita;
@@ -42,13 +33,13 @@ class mahasiswa {
 
 $Jefri = new mahasiswa('Jefrinaldi', '2255201021', 'pbo', 'Hebaatt');
 
-echo "Nama:" . $Jefri->get_name();
+echo $Jefri->get_name();
 echo "<br>";
-echo "NIM:" . $Jefri->get_nim();
+echo $Jefri->get_nim();
 echo "<br>";
-echo "Matkul: " . $Jefri->get_matkul();
+echo $Jefri->get_matkul();
 echo "<br>";
-echo "Cita-Cita: " . $Jefri->get_citacita();
+echo $Jefri->get_citacita();
 
 ?>
 </body>
